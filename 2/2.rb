@@ -18,10 +18,9 @@ def fib(n)
   n < 2 ? n : fib(n-1) + fib(n-2)
 end
 
-n, sum = 0, 0
-while !((f = fib(n)) > 4000000) do
+n, sum = -1, 0
+while !((f = fib(n += 1)) > 4000000) do
   sum += f if f.even?
-  n += 1
 end
 
 puts sum #4613732
