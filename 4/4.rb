@@ -16,9 +16,9 @@ palindromes = []
     palindromes << x if x.palindrome?
   end
 end
+puts palindromes.max  #906609
 
-puts palindromes.max
-
-
+# and a golfed solution :)
+# puts [].tap{|p|100.upto(999){|n| 100.upto(999){|m| x = n * m; p << x if x.to_s == x.to_s.reverse }}}.max
 
 
