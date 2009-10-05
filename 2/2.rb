@@ -12,5 +12,3 @@ puts fib.select{|x| x % 2 == 0}.inject(:+)  #4613732
 
 # here's a golfed solution :)
 # puts [1, 2].tap {|fib| until fib.last > 4000000; fib << fib[-1] + fib[-2] end }.select{|x| x % 2 == 0}.inject(:+)
-
-

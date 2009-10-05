@@ -5,6 +5,3 @@
 require 'mathn' # Ruby 1.9 adds Integer#prime_division
 
 puts 600851475143.prime_division.last.first #6857
-
-
-
