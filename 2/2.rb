@@ -4,15 +4,13 @@
 # 
 # Find the sum of all the even-valued terms in the sequence which do not exceed four million.
 
-# a golf solution
-puts [1, 2].tap {|fib| until fib.last > 4000000; fib << fib[-1] + fib[-2] end }.select{|x| x % 2 == 0}.inject(:+)  #4613732
-
-
-# same thing with more comprehensible formatting and use of tap
 fib = [1, 2]
 until fib.last > 4000000
   fib << fib[-1] + fib[-2]
 end
 puts fib.select{|x| x % 2 == 0}.inject(:+)  #4613732
+
+# here's a golfed solution :)
+# puts [1, 2].tap {|fib| until fib.last > 4000000; fib << fib[-1] + fib[-2] end }.select{|x| x % 2 == 0}.inject(:+)
 
 
