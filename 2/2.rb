@@ -4,10 +4,8 @@
 # 
 # Find the sum of all the even-valued terms in the sequence which do not exceed four million.
 
-sum, fib = 0, [1, 2]
-until fib.last > 4000000 do
-  f = fib.last
-  sum += f if f % 2 == 0
+fib = [1, 2]
+until fib.last > 4000000
   fib << fib[-1] + fib[-2]
 end
-puts sum #4613732
+puts fib.select{|x| x % 2 == 0}.inject(:+)  #4613732
