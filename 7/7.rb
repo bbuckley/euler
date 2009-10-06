@@ -7,6 +7,5 @@
 
 require 'mathn'
 x = Prime.instance.each
-y = nil
-10001.times { y = x.succ }
-puts y #104743
+10000.times { x.succ }
+puts x.succ #104743
