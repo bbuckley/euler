@@ -9,14 +9,5 @@ class Integer
   end
 end
 
-palindromes = []
-100.upto(999) do |n|
-  100.upto(999) do |m|
-    x = n * m
-    palindromes << x if x.palindrome?
-  end
-end
-puts palindromes.max  #906609
-
-# and a golfed solution :)
-# puts [].tap{|p|100.upto(999){|n| 100.upto(999){|m| x = n * m; p << x if x.to_s == x.to_s.reverse }}}.max
+d = (100..999).to_a
+puts d.product(d).map{|a, b| a*b }.select(&:palindrome?).max #906609
