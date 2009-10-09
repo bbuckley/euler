@@ -1,3 +1,7 @@
+= Euler
+
+== What is it
 These are Ruby solutions to the Euler project problems.
 
+== Help me
 I welcome suggestions for improvement.
