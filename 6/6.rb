@@ -12,4 +12,4 @@
 #   25164150
 
 x  = (1..100)
-puts x.inject(:+)**2 - x.map{|x| x**2 }.inject(:+)
+puts x.inject(:+)**2 - x.map{|x| x**2 }.inject(:+)ß
