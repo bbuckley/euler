@@ -27,3 +27,5 @@ until fib[1].to_s.size > 999
   n += 1
 end
 puts n
+
+#todo spuce

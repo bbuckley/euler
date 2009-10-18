@@ -10,4 +10,4 @@ class Integer
 end
 
 d = (100..999).to_a
-puts d.product(d).map{|a, b| a*b }.select(&:palindrome?).max #906609
+puts d.product(d).map{|a, b| a * b }.select(&:palindrome?).max #906609
