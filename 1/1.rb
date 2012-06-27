@@ -5,8 +5,8 @@
 #1.upto(999).select{|e| [3,5].any?{|i| (e % i).zero? }}.inject(:+)  #233168
 
 # is this better?
-div = lambda{|x| [3,5].any?{|i| (x % i).zero? }
-1.upto(999).select(&div).inject(:+)
+criteria = lambda{|x| [3,5].any?{|i| (x % i).zero? }
+1.upto(999).select(&criteria).inject(:+)
 
 # require 'benchmark'
 # Benchmark.bm do |x| x.report do 
