@@ -7,4 +7,4 @@ Euler: http://projecteuler.net/index.php?section=problems
 
 
 == Help me
-I welcome suggestions for improvement.   
+I welcome suggestions for improvement.   Oh yeah.
